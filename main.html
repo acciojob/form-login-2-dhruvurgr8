@@ -8,13 +8,21 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form class="form">
-	<label>First Name:<input type="text" name="firstname"></label>
-	<label>Last Name:<input type="text" name="lastname"></label>
-	<label>Phone Number:<input type="number" name="number"></label>
-	<label>Email ID:<input type="email" name="email"></label>
-		<input type="submit">
-		</form>
+	<form id="myForm">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="First Name" required>
+
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="Last Name" required>
+
+        <label for="phoneNumber">Phone Number</label>
+        <input type="tel" id="phoneNumber" name="Phone Number" required>
+
+        <label for="email">Email ID</label>
+        <input type="email" id="email" name="Email ID" required>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
     <script type="text/javascript" src="./script.js">
 </script>
 
